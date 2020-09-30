@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+.column {
+  float: left;
+  padding: 30px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+#filebrowse {
+  padding-bottom: 10px;
+}
+.left {
+  width: 25%;
+  padding-left: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.middle {
+  width: 25%;
+  padding-left: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right {
+  width: 50%;
+  padding-left: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.App-link {
-  color: #61dafb;
+.td {
+  margin-right: 100px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  width: 50%;
 }
